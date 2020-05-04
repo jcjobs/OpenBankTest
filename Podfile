@@ -8,7 +8,6 @@ target 'OpenBank' do
   pod 'Alamofire'
   pod 'lottie-ios'
   pod 'WebBrowser'
-  pod 'FLEX'#, :configurations => ['Debug']
 
   target 'OpenBankTests' do
     inherit! :search_paths
