@@ -6,7 +6,7 @@ https://medium.com/@mlukacs_42903/part-1-what-is-clean-swift-vip-a-brief-overvie
 
 
 ## Patterns and project structure
-- Used simple VIP to avoid complicating project structure and CLEAN code
+- Used simple VIP to avoid complicating project structure and keep CLEAN code.
 
 
 ## Example
