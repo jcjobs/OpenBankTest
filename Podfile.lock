@@ -1,0 +1,28 @@
+PODS:
+  - Alamofire (5.1.0)
+  - FLEX (4.1.1)
+  - lottie-ios (3.1.8)
+  - WebBrowser (0.1.5)
+
+DEPENDENCIES:
+  - Alamofire
+  - FLEX
+  - lottie-ios
+  - WebBrowser
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - FLEX
+    - lottie-ios
+    - WebBrowser
+
+SPEC CHECKSUMS:
+  Alamofire: 9d5c5f602928e512395b30950c5984eca840093c
+  FLEX: 81096107977a09836eb440173010ceeef01105d6
+  lottie-ios: 48fac6be217c76937e36e340e2d09cf7b10b7f5f
+  WebBrowser: 0248873c77f54e2ac504ece7c2bc8eeb710b5a4f
+
+PODFILE CHECKSUM: aeff4f48cea0cbb342a3ee6722fe51b81a94dd2d
+
+COCOAPODS: 1.9.1

@@ -1,0 +1,772 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1F2672AA90523B9F8EBCFFBD /* Pods_OpenBank.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D113F326A4C5C8719C48BBCB /* Pods_OpenBank.framework */; };
+		783E5D1C7B17CBD3C0E71284 /* Pods_OpenBankTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9017C54B81DC69F2B5A39414 /* Pods_OpenBankTests.framework */; };
+		885E2F13245C092400B42885 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885E2F12245C092400B42885 /* AppDelegate.swift */; };
+		885E2F1A245C092400B42885 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 885E2F18245C092400B42885 /* Main.storyboard */; };
+		885E2F1C245C092500B42885 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 885E2F1B245C092500B42885 /* Assets.xcassets */; };
+		885E2F1F245C092500B42885 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 885E2F1D245C092500B42885 /* LaunchScreen.storyboard */; };
+		885E2F2A245C092600B42885 /* OpenBankTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885E2F29245C092600B42885 /* OpenBankTests.swift */; };
+		88837371245EC4DB00799414 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88837370245EC4DB00799414 /* BaseViewController.swift */; };
+		88837374245EC51600799414 /* UIView+Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88837373245EC51600799414 /* UIView+Animations.swift */; };
+		88837378245EC55600799414 /* downloading.json in Resources */ = {isa = PBXBuildFile; fileRef = 88837376245EC55600799414 /* downloading.json */; };
+		88837379245EC55600799414 /* loader1.json in Resources */ = {isa = PBXBuildFile; fileRef = 88837377245EC55600799414 /* loader1.json */; };
+		88837380245EE22F00799414 /* CharacterDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8883737A245EE22F00799414 /* CharacterDetailPresenter.swift */; };
+		88837381245EE22F00799414 /* CharacterDetailWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8883737B245EE22F00799414 /* CharacterDetailWorker.swift */; };
+		88837382245EE22F00799414 /* CharacterDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8883737C245EE22F00799414 /* CharacterDetailRouter.swift */; };
+		88837383245EE22F00799414 /* CharacterDetailModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8883737D245EE22F00799414 /* CharacterDetailModels.swift */; };
+		88837384245EE22F00799414 /* CharacterDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8883737E245EE22F00799414 /* CharacterDetailViewController.swift */; };
+		88837385245EE22F00799414 /* CharacterDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8883737F245EE22F00799414 /* CharacterDetailInteractor.swift */; };
+		8883738C245EE4B200799414 /* ColumnFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8883738B245EE4B200799414 /* ColumnFlowLayout.swift */; };
+		8883738E245EE4EA00799414 /* CharacterDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8883738D245EE4EA00799414 /* CharacterDetailTableViewCell.swift */; };
+		88837390245F602A00799414 /* Data+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8883738F245F602A00799414 /* Data+Extensions.swift */; };
+		88837392245FB3C400799414 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88837391245FB3C400799414 /* Character.swift */; };
+		88BA4BFE245C0BD1003DBC27 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BA4BFD245C0BD1003DBC27 /* NetworkManager.swift */; };
+		88BA4C00245C0BF1003DBC27 /* NetworkEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BA4BFF245C0BF1003DBC27 /* NetworkEnums.swift */; };
+		88BA4C0B245C0D21003DBC27 /* CharactersListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BA4C05245C0D21003DBC27 /* CharactersListPresenter.swift */; };
+		88BA4C0C245C0D21003DBC27 /* CharactersListWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BA4C06245C0D21003DBC27 /* CharactersListWorker.swift */; };
+		88BA4C0D245C0D21003DBC27 /* CharactersListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BA4C07245C0D21003DBC27 /* CharactersListRouter.swift */; };
+		88BA4C0E245C0D21003DBC27 /* CharactersListModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BA4C08245C0D21003DBC27 /* CharactersListModels.swift */; };
+		88BA4C0F245C0D21003DBC27 /* CharactersListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BA4C09245C0D21003DBC27 /* CharactersListViewController.swift */; };
+		88BA4C10245C0D21003DBC27 /* CharactersListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BA4C0A245C0D21003DBC27 /* CharactersListInteractor.swift */; };
+		88BA4C12245C0E06003DBC27 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BA4C11245C0E06003DBC27 /* WelcomeViewController.swift */; };
+		88BA4C16245C119A003DBC27 /* CBaseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BA4C15245C119A003DBC27 /* CBaseRequest.swift */; };
+		88BA4C18245C151E003DBC27 /* CCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BA4C17245C151E003DBC27 /* CCharacter.swift */; };
+		88BA4C1B245CF439003DBC27 /* SecurityHanlder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BA4C1A245CF439003DBC27 /* SecurityHanlder.swift */; };
+		88BA4C1D245D3D86003DBC27 /* CharactersCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BA4C1C245D3D86003DBC27 /* CharactersCollectionViewCell.swift */; };
+		88BA4C1F245D47F6003DBC27 /* CCharactersResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BA4C1E245D47F6003DBC27 /* CCharactersResponse.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		885E2F26245C092600B42885 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 885E2F07245C092400B42885 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 885E2F0E245C092400B42885;
+			remoteInfo = OpenBank;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1B9B4D61B8AD82260370B906 /* Pods-OpenBank.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenBank.release.xcconfig"; path = "Target Support Files/Pods-OpenBank/Pods-OpenBank.release.xcconfig"; sourceTree = "<group>"; };
+		5730B23361C6ABB4B80B15F4 /* Pods-OpenBank.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenBank.debug.xcconfig"; path = "Target Support Files/Pods-OpenBank/Pods-OpenBank.debug.xcconfig"; sourceTree = "<group>"; };
+		885E2F0F245C092400B42885 /* OpenBank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenBank.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		885E2F12245C092400B42885 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		885E2F19245C092400B42885 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		885E2F1B245C092500B42885 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		885E2F1E245C092500B42885 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		885E2F20245C092500B42885 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		885E2F25245C092600B42885 /* OpenBankTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenBankTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		885E2F29245C092600B42885 /* OpenBankTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenBankTests.swift; sourceTree = "<group>"; };
+		885E2F2B245C092600B42885 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88837370245EC4DB00799414 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		88837373245EC51600799414 /* UIView+Animations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Animations.swift"; sourceTree = "<group>"; };
+		88837376245EC55600799414 /* downloading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = downloading.json; sourceTree = "<group>"; };
+		88837377245EC55600799414 /* loader1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loader1.json; sourceTree = "<group>"; };
+		8883737A245EE22F00799414 /* CharacterDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailPresenter.swift; sourceTree = "<group>"; };
+		8883737B245EE22F00799414 /* CharacterDetailWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailWorker.swift; sourceTree = "<group>"; };
+		8883737C245EE22F00799414 /* CharacterDetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailRouter.swift; sourceTree = "<group>"; };
+		8883737D245EE22F00799414 /* CharacterDetailModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailModels.swift; sourceTree = "<group>"; };
+		8883737E245EE22F00799414 /* CharacterDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailViewController.swift; sourceTree = "<group>"; };
+		8883737F245EE22F00799414 /* CharacterDetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailInteractor.swift; sourceTree = "<group>"; };
+		8883738B245EE4B200799414 /* ColumnFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColumnFlowLayout.swift; sourceTree = "<group>"; };
+		8883738D245EE4EA00799414 /* CharacterDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailTableViewCell.swift; sourceTree = "<group>"; };
+		8883738F245F602A00799414 /* Data+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Extensions.swift"; sourceTree = "<group>"; };
+		88837391245FB3C400799414 /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		88BA4BFD245C0BD1003DBC27 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		88BA4BFF245C0BF1003DBC27 /* NetworkEnums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkEnums.swift; sourceTree = "<group>"; };
+		88BA4C05245C0D21003DBC27 /* CharactersListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersListPresenter.swift; sourceTree = "<group>"; };
+		88BA4C06245C0D21003DBC27 /* CharactersListWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersListWorker.swift; sourceTree = "<group>"; };
+		88BA4C07245C0D21003DBC27 /* CharactersListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersListRouter.swift; sourceTree = "<group>"; };
+		88BA4C08245C0D21003DBC27 /* CharactersListModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersListModels.swift; sourceTree = "<group>"; };
+		88BA4C09245C0D21003DBC27 /* CharactersListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersListViewController.swift; sourceTree = "<group>"; };
+		88BA4C0A245C0D21003DBC27 /* CharactersListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersListInteractor.swift; sourceTree = "<group>"; };
+		88BA4C11245C0E06003DBC27 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		88BA4C15245C119A003DBC27 /* CBaseRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CBaseRequest.swift; sourceTree = "<group>"; };
+		88BA4C17245C151E003DBC27 /* CCharacter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCharacter.swift; sourceTree = "<group>"; };
+		88BA4C1A245CF439003DBC27 /* SecurityHanlder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecurityHanlder.swift; sourceTree = "<group>"; };
+		88BA4C1C245D3D86003DBC27 /* CharactersCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersCollectionViewCell.swift; sourceTree = "<group>"; };
+		88BA4C1E245D47F6003DBC27 /* CCharactersResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCharactersResponse.swift; sourceTree = "<group>"; };
+		8E2DC9B2383179AB5ACAC651 /* Pods-OpenBankTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenBankTests.debug.xcconfig"; path = "Target Support Files/Pods-OpenBankTests/Pods-OpenBankTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9017C54B81DC69F2B5A39414 /* Pods_OpenBankTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OpenBankTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D113F326A4C5C8719C48BBCB /* Pods_OpenBank.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OpenBank.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D613D5EF2AF404EAC5911C7D /* Pods-OpenBankTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenBankTests.release.xcconfig"; path = "Target Support Files/Pods-OpenBankTests/Pods-OpenBankTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		885E2F0C245C092400B42885 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F2672AA90523B9F8EBCFFBD /* Pods_OpenBank.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		885E2F22245C092600B42885 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				783E5D1C7B17CBD3C0E71284 /* Pods_OpenBankTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1BAC026B3B92C261E3119B68 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D113F326A4C5C8719C48BBCB /* Pods_OpenBank.framework */,
+				9017C54B81DC69F2B5A39414 /* Pods_OpenBankTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		329D00F87332561251E3DC50 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5730B23361C6ABB4B80B15F4 /* Pods-OpenBank.debug.xcconfig */,
+				1B9B4D61B8AD82260370B906 /* Pods-OpenBank.release.xcconfig */,
+				8E2DC9B2383179AB5ACAC651 /* Pods-OpenBankTests.debug.xcconfig */,
+				D613D5EF2AF404EAC5911C7D /* Pods-OpenBankTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		885E2F06245C092400B42885 = {
+			isa = PBXGroup;
+			children = (
+				885E2F11245C092400B42885 /* OpenBank */,
+				885E2F28245C092600B42885 /* OpenBankTests */,
+				885E2F10245C092400B42885 /* Products */,
+				329D00F87332561251E3DC50 /* Pods */,
+				1BAC026B3B92C261E3119B68 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		885E2F10245C092400B42885 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				885E2F0F245C092400B42885 /* OpenBank.app */,
+				885E2F25245C092600B42885 /* OpenBankTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		885E2F11245C092400B42885 /* OpenBank */ = {
+			isa = PBXGroup;
+			children = (
+				885E2F12245C092400B42885 /* AppDelegate.swift */,
+				8883738A245EE4A600799414 /* CustomUIControls */,
+				88837375245EC52F00799414 /* Resources */,
+				88837372245EC50700799414 /* Extensions */,
+				88BA4C19245CF42C003DBC27 /* Utilities */,
+				88BA4C13245C1168003DBC27 /* Models */,
+				88BA4C01245C0CC2003DBC27 /* Scenes */,
+				88BA4BFC245C0BBD003DBC27 /* Network */,
+				885E2F18245C092400B42885 /* Main.storyboard */,
+				885E2F1D245C092500B42885 /* LaunchScreen.storyboard */,
+				885E2F20245C092500B42885 /* Info.plist */,
+			);
+			path = OpenBank;
+			sourceTree = "<group>";
+		};
+		885E2F28245C092600B42885 /* OpenBankTests */ = {
+			isa = PBXGroup;
+			children = (
+				885E2F29245C092600B42885 /* OpenBankTests.swift */,
+				885E2F2B245C092600B42885 /* Info.plist */,
+			);
+			path = OpenBankTests;
+			sourceTree = "<group>";
+		};
+		88837372245EC50700799414 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				88837373245EC51600799414 /* UIView+Animations.swift */,
+				8883738F245F602A00799414 /* Data+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		88837375245EC52F00799414 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				88837376245EC55600799414 /* downloading.json */,
+				88837377245EC55600799414 /* loader1.json */,
+				885E2F1B245C092500B42885 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		8883738A245EE4A600799414 /* CustomUIControls */ = {
+			isa = PBXGroup;
+			children = (
+				8883738B245EE4B200799414 /* ColumnFlowLayout.swift */,
+			);
+			name = CustomUIControls;
+			path = Common/CustomUIControls;
+			sourceTree = "<group>";
+		};
+		88BA4BFC245C0BBD003DBC27 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				88BA4BFD245C0BD1003DBC27 /* NetworkManager.swift */,
+				88BA4BFF245C0BF1003DBC27 /* NetworkEnums.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		88BA4C01245C0CC2003DBC27 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				88837370245EC4DB00799414 /* BaseViewController.swift */,
+				88BA4C11245C0E06003DBC27 /* WelcomeViewController.swift */,
+				88BA4C02245C0CDA003DBC27 /* Characters */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		88BA4C02245C0CDA003DBC27 /* Characters */ = {
+			isa = PBXGroup;
+			children = (
+				88BA4C03245C0CEF003DBC27 /* List */,
+				88BA4C04245C0CFA003DBC27 /* Detail */,
+			);
+			path = Characters;
+			sourceTree = "<group>";
+		};
+		88BA4C03245C0CEF003DBC27 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				88BA4C05245C0D21003DBC27 /* CharactersListPresenter.swift */,
+				88BA4C06245C0D21003DBC27 /* CharactersListWorker.swift */,
+				88BA4C07245C0D21003DBC27 /* CharactersListRouter.swift */,
+				88BA4C08245C0D21003DBC27 /* CharactersListModels.swift */,
+				88BA4C09245C0D21003DBC27 /* CharactersListViewController.swift */,
+				88BA4C0A245C0D21003DBC27 /* CharactersListInteractor.swift */,
+				88BA4C1C245D3D86003DBC27 /* CharactersCollectionViewCell.swift */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		88BA4C04245C0CFA003DBC27 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				8883737A245EE22F00799414 /* CharacterDetailPresenter.swift */,
+				8883737B245EE22F00799414 /* CharacterDetailWorker.swift */,
+				8883737C245EE22F00799414 /* CharacterDetailRouter.swift */,
+				8883737D245EE22F00799414 /* CharacterDetailModels.swift */,
+				8883737E245EE22F00799414 /* CharacterDetailViewController.swift */,
+				8883737F245EE22F00799414 /* CharacterDetailInteractor.swift */,
+				8883738D245EE4EA00799414 /* CharacterDetailTableViewCell.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		88BA4C13245C1168003DBC27 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				88BA4C14245C1173003DBC27 /* Codeable */,
+				88837391245FB3C400799414 /* Character.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		88BA4C14245C1173003DBC27 /* Codeable */ = {
+			isa = PBXGroup;
+			children = (
+				88BA4C15245C119A003DBC27 /* CBaseRequest.swift */,
+				88BA4C17245C151E003DBC27 /* CCharacter.swift */,
+				88BA4C1E245D47F6003DBC27 /* CCharactersResponse.swift */,
+			);
+			path = Codeable;
+			sourceTree = "<group>";
+		};
+		88BA4C19245CF42C003DBC27 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				88BA4C1A245CF439003DBC27 /* SecurityHanlder.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		885E2F0E245C092400B42885 /* OpenBank */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 885E2F2E245C092600B42885 /* Build configuration list for PBXNativeTarget "OpenBank" */;
+			buildPhases = (
+				002791B4607C745D3B602022 /* [CP] Check Pods Manifest.lock */,
+				885E2F0B245C092400B42885 /* Sources */,
+				885E2F0C245C092400B42885 /* Frameworks */,
+				885E2F0D245C092400B42885 /* Resources */,
+				EEE0C2BDD504BB3D4346F391 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OpenBank;
+			productName = OpenBank;
+			productReference = 885E2F0F245C092400B42885 /* OpenBank.app */;
+			productType = "com.apple.product-type.application";
+		};
+		885E2F24245C092600B42885 /* OpenBankTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 885E2F31245C092600B42885 /* Build configuration list for PBXNativeTarget "OpenBankTests" */;
+			buildPhases = (
+				F78C00FC7540CB113E36E9A0 /* [CP] Check Pods Manifest.lock */,
+				885E2F21245C092600B42885 /* Sources */,
+				885E2F22245C092600B42885 /* Frameworks */,
+				885E2F23245C092600B42885 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				885E2F27245C092600B42885 /* PBXTargetDependency */,
+			);
+			name = OpenBankTests;
+			productName = OpenBankTests;
+			productReference = 885E2F25245C092600B42885 /* OpenBankTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		885E2F07245C092400B42885 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = "Juan Carlos Perez";
+				TargetAttributes = {
+					885E2F0E245C092400B42885 = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+					885E2F24245C092600B42885 = {
+						CreatedOnToolsVersion = 11.4.1;
+						TestTargetID = 885E2F0E245C092400B42885;
+					};
+				};
+			};
+			buildConfigurationList = 885E2F0A245C092400B42885 /* Build configuration list for PBXProject "OpenBank" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 885E2F06245C092400B42885;
+			productRefGroup = 885E2F10245C092400B42885 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				885E2F0E245C092400B42885 /* OpenBank */,
+				885E2F24245C092600B42885 /* OpenBankTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		885E2F0D245C092400B42885 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88837379245EC55600799414 /* loader1.json in Resources */,
+				885E2F1F245C092500B42885 /* LaunchScreen.storyboard in Resources */,
+				885E2F1C245C092500B42885 /* Assets.xcassets in Resources */,
+				88837378245EC55600799414 /* downloading.json in Resources */,
+				885E2F1A245C092400B42885 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		885E2F23245C092600B42885 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		002791B4607C745D3B602022 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OpenBank-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EEE0C2BDD504BB3D4346F391 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OpenBank/Pods-OpenBank-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OpenBank/Pods-OpenBank-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OpenBank/Pods-OpenBank-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F78C00FC7540CB113E36E9A0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OpenBankTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		885E2F0B245C092400B42885 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88837392245FB3C400799414 /* Character.swift in Sources */,
+				88BA4C1D245D3D86003DBC27 /* CharactersCollectionViewCell.swift in Sources */,
+				88BA4C0B245C0D21003DBC27 /* CharactersListPresenter.swift in Sources */,
+				88BA4C12245C0E06003DBC27 /* WelcomeViewController.swift in Sources */,
+				88BA4C0C245C0D21003DBC27 /* CharactersListWorker.swift in Sources */,
+				88BA4C0F245C0D21003DBC27 /* CharactersListViewController.swift in Sources */,
+				88BA4BFE245C0BD1003DBC27 /* NetworkManager.swift in Sources */,
+				88BA4C0D245C0D21003DBC27 /* CharactersListRouter.swift in Sources */,
+				88837390245F602A00799414 /* Data+Extensions.swift in Sources */,
+				88837381245EE22F00799414 /* CharacterDetailWorker.swift in Sources */,
+				88837374245EC51600799414 /* UIView+Animations.swift in Sources */,
+				88BA4C0E245C0D21003DBC27 /* CharactersListModels.swift in Sources */,
+				88BA4C1B245CF439003DBC27 /* SecurityHanlder.swift in Sources */,
+				88837384245EE22F00799414 /* CharacterDetailViewController.swift in Sources */,
+				88837383245EE22F00799414 /* CharacterDetailModels.swift in Sources */,
+				8883738C245EE4B200799414 /* ColumnFlowLayout.swift in Sources */,
+				8883738E245EE4EA00799414 /* CharacterDetailTableViewCell.swift in Sources */,
+				885E2F13245C092400B42885 /* AppDelegate.swift in Sources */,
+				88837385245EE22F00799414 /* CharacterDetailInteractor.swift in Sources */,
+				88BA4C10245C0D21003DBC27 /* CharactersListInteractor.swift in Sources */,
+				88BA4C1F245D47F6003DBC27 /* CCharactersResponse.swift in Sources */,
+				88BA4C00245C0BF1003DBC27 /* NetworkEnums.swift in Sources */,
+				88837382245EE22F00799414 /* CharacterDetailRouter.swift in Sources */,
+				88837371245EC4DB00799414 /* BaseViewController.swift in Sources */,
+				88BA4C16245C119A003DBC27 /* CBaseRequest.swift in Sources */,
+				88BA4C18245C151E003DBC27 /* CCharacter.swift in Sources */,
+				88837380245EE22F00799414 /* CharacterDetailPresenter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		885E2F21245C092600B42885 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				885E2F2A245C092600B42885 /* OpenBankTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		885E2F27245C092600B42885 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 885E2F0E245C092400B42885 /* OpenBank */;
+			targetProxy = 885E2F26245C092600B42885 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		885E2F18245C092400B42885 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				885E2F19245C092400B42885 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		885E2F1D245C092500B42885 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				885E2F1E245C092500B42885 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		885E2F2C245C092600B42885 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		885E2F2D245C092600B42885 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		885E2F2F245C092600B42885 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5730B23361C6ABB4B80B15F4 /* Pods-OpenBank.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4A7QK6XB9U;
+				INFOPLIST_FILE = OpenBank/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jcpd.OpenBank;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		885E2F30245C092600B42885 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B9B4D61B8AD82260370B906 /* Pods-OpenBank.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4A7QK6XB9U;
+				INFOPLIST_FILE = OpenBank/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jcpd.OpenBank;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		885E2F32245C092600B42885 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E2DC9B2383179AB5ACAC651 /* Pods-OpenBankTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4A7QK6XB9U;
+				INFOPLIST_FILE = OpenBankTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jcpd.OpenBankTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OpenBank.app/OpenBank";
+			};
+			name = Debug;
+		};
+		885E2F33245C092600B42885 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D613D5EF2AF404EAC5911C7D /* Pods-OpenBankTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4A7QK6XB9U;
+				INFOPLIST_FILE = OpenBankTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jcpd.OpenBankTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OpenBank.app/OpenBank";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		885E2F0A245C092400B42885 /* Build configuration list for PBXProject "OpenBank" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				885E2F2C245C092600B42885 /* Debug */,
+				885E2F2D245C092600B42885 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		885E2F2E245C092600B42885 /* Build configuration list for PBXNativeTarget "OpenBank" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				885E2F2F245C092600B42885 /* Debug */,
+				885E2F30245C092600B42885 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		885E2F31245C092600B42885 /* Build configuration list for PBXNativeTarget "OpenBankTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				885E2F32245C092600B42885 /* Debug */,
+				885E2F33245C092600B42885 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 885E2F07245C092400B42885 /* Project object */;
+}
