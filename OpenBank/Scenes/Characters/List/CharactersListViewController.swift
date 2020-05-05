@@ -155,7 +155,7 @@ extension CharactersListViewController: UICollectionViewDataSource {
                         cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CharactersCollectionViewCell.identifier, for: indexPath) as! CharactersCollectionViewCell
         let data = charactersList[indexPath.row]
-        cell.configure(with: "\(data.name)", charDescription: data.detail)
+        cell.configure(with: "\(data.name)", urlString: "\(data.thumbnail.path).\(data.thumbnail.imageExtension)")
         return cell
     }
     

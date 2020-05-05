@@ -13,20 +13,25 @@ class CharactersCollectionViewCell: UICollectionViewCell {
     static let identifier = "CharactersCollectionViewCellId"
     
     @IBOutlet weak var lblCharacterName: UILabel!
-    @IBOutlet weak var lblCharacterDescription: UILabel!
+    @IBOutlet weak var imvCharacter: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
            // Initialization code
         
     }
+    
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        imvCharacter.image = nil
+    }
        
-    func configure(with name: String, charDescription: String) {
+    func configure(with name: String, urlString: String) {
         lblCharacterName.text = name
-        lblCharacterDescription.text = charDescription
+        imvCharacter.fromRemotePath(urlPath: urlString)
+        
            
         lblCharacterName.sizeToFit()
-        lblCharacterDescription.sizeToFit()
         setStyle()
     }
        

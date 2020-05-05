@@ -20,4 +20,5 @@ struct Character {
         return dateFormatter.date(from: modified)
     }
     let urlDetail: String?
+    let characterImageUrl:String
 }

@@ -28,6 +28,7 @@
 		8883738E245EE4EA00799414 /* CharacterDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8883738D245EE4EA00799414 /* CharacterDetailTableViewCell.swift */; };
 		88837390245F602A00799414 /* Data+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8883738F245F602A00799414 /* Data+Extensions.swift */; };
 		88837392245FB3C400799414 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88837391245FB3C400799414 /* Character.swift */; };
+		88919DFF2461607D00D2548E /* UIImageView+Remote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88919DFE2461607D00D2548E /* UIImageView+Remote.swift */; };
 		88BA4BFE245C0BD1003DBC27 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BA4BFD245C0BD1003DBC27 /* NetworkManager.swift */; };
 		88BA4C00245C0BF1003DBC27 /* NetworkEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BA4BFF245C0BF1003DBC27 /* NetworkEnums.swift */; };
 		88BA4C0B245C0D21003DBC27 /* CharactersListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BA4C05245C0D21003DBC27 /* CharactersListPresenter.swift */; };
@@ -80,6 +81,7 @@
 		8883738D245EE4EA00799414 /* CharacterDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailTableViewCell.swift; sourceTree = "<group>"; };
 		8883738F245F602A00799414 /* Data+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Extensions.swift"; sourceTree = "<group>"; };
 		88837391245FB3C400799414 /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		88919DFE2461607D00D2548E /* UIImageView+Remote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Remote.swift"; sourceTree = "<group>"; };
 		88BA4BFD245C0BD1003DBC27 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		88BA4BFF245C0BF1003DBC27 /* NetworkEnums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkEnums.swift; sourceTree = "<group>"; };
 		88BA4C05245C0D21003DBC27 /* CharactersListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersListPresenter.swift; sourceTree = "<group>"; };
@@ -192,6 +194,7 @@
 			children = (
 				88837373245EC51600799414 /* UIView+Animations.swift */,
 				8883738F245F602A00799414 /* Data+Extensions.swift */,
+				88919DFE2461607D00D2548E /* UIImageView+Remote.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -490,6 +493,7 @@
 				88BA4C10245C0D21003DBC27 /* CharactersListInteractor.swift in Sources */,
 				88BA4C1F245D47F6003DBC27 /* CCharactersResponse.swift in Sources */,
 				88BA4C00245C0BF1003DBC27 /* NetworkEnums.swift in Sources */,
+				88919DFF2461607D00D2548E /* UIImageView+Remote.swift in Sources */,
 				88837382245EE22F00799414 /* CharacterDetailRouter.swift in Sources */,
 				88837371245EC4DB00799414 /* BaseViewController.swift in Sources */,
 				88BA4C16245C119A003DBC27 /* CBaseRequest.swift in Sources */,

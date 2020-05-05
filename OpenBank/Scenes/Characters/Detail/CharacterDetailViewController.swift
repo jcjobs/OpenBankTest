@@ -19,6 +19,7 @@ class CharacterDetailViewController: BaseViewController
 {
     
     @IBOutlet weak var lblCharacter: UILabel!
+    @IBOutlet weak var imvCharacter: UIImageView!
     @IBOutlet weak var tblCharacterDetail: UITableView!
     
     private var selectedCharacter: Character?
@@ -114,6 +115,9 @@ extension CharacterDetailViewController: CharacterDetailDisplayLogic {
         selectedCharacter = viewModel.character
         
         //lblCharacter.text = selectedCharacter?.name ?? ""
+        if let characterImageUrl = selectedCharacter?.characterImageUrl {
+            imvCharacter.fromRemotePath(urlPath: characterImageUrl)
+        }
         tblCharacterDetail.reloadData()
     }
     

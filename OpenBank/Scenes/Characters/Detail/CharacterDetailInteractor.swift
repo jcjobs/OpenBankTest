@@ -36,7 +36,7 @@ class CharacterDetailInteractor: CharacterDetailBusinessLogic, CharacterDetailDa
               print(wresponse)
               guard let dataResult =  wresponse.data, let character = dataResult.results?.first else{ return }
               
-              let characterResult = Character(id: character.id, name: character.name, detail: character.detail, modified: character.modified, urlDetail: character.urls?.first?.url)
+              let characterResult = Character(id: character.id, name: character.name, detail: character.detail, modified: character.modified, urlDetail: character.urls?.first?.url, characterImageUrl: "\(character.thumbnail.path).\(character.thumbnail.imageExtension)")
               
               let response = CharacterDetail.Detail.Response(character: characterResult)
               self.presenter?.presentCharacter(response: response)
